@@ -2,6 +2,7 @@
   "compilerOptions": {
     "declaration": true,
     "module": "commonjs",
+    "moduleResolution": "node",
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
     "noImplicitReturns": true,
@@ -14,6 +15,7 @@
     "target": "es2015"
   },
   "files": [
+    "parse-sel.d.ts",
     "index.ts"
   ]
 }

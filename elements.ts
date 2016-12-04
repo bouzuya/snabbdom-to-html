@@ -1,7 +1,6 @@
-
 // All SVG children elements, not in this list, should self-close
 
-exports.CONTAINER = {
+const CONTAINER: { [name: string]: boolean; } = {
   // http://www.w3.org/TR/SVG/intro.html#TermContainerElement
   'a': true,
   'defs': true,
@@ -19,11 +18,11 @@ exports.CONTAINER = {
   'desc': true,
   'metadata': true,
   'title': true
-}
+};
 
 // http://www.w3.org/html/wg/drafts/html/master/syntax.html#void-elements
 
-exports.VOID = {
+const VOID: { [name: string]: boolean; } = {
   area: true,
   base: true,
   br: true,
@@ -39,4 +38,6 @@ exports.VOID = {
   source: true,
   track: true,
   wbr: true
-}
+};
+
+export { CONTAINER, VOID };

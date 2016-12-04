@@ -1,11 +1,10 @@
-
-var forOwn = require('lodash.forown')
-var remove = require('lodash.remove')
-var uniq = require('lodash.uniq')
+import * as forOwn from 'lodash.forOwn';
+import * as remove from 'lodash.remove';
+import * as uniq from 'lodash.uniq';
 
 // data.class
 
-module.exports = function classModule (vnode, attributes) {
+export default function classModule (vnode, attributes: Map<string, string>) {
   var values
   var _add = []
   var _remove = []

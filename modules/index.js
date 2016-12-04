@@ -1,7 +1,13 @@
+import class1 from './class';
+import props from './props';
+import attributes from './attributes';
+import style from './style';
 
-module.exports = {
-  class: require('./class'),
-  props: require('./props'),
-  attributes: require('./attributes'),
-  style: require('./style')
-}
+const modules = {
+  class: class1,
+  props,
+  attributes,
+  style
+};
+
+export default modules;
